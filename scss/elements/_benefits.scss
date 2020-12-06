@@ -1,0 +1,196 @@
+.benefits {
+  padding-top: 105px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.laptop {
+  height: 370px;
+  width: 70vw;
+  margin: 0 auto 37px;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+}
+
+.laptop_info {
+  margin: 91px 35px;
+  height: 188px;
+  width: 416px;
+}
+
+.laptop_info h1 {
+  font-family: $secondary-font;
+  font-size: 36px;
+  color: $secondary-color;
+}
+
+.laptop_info p {
+  font-family: $primary-font;
+  font-size: 16px;
+  color: $secondary-color;
+  padding: 36px 0 50px 0;
+  line-height: 22px;
+}
+
+.laptop_info p::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 332px;
+  background-color: $main-red;
+  margin-top: 50px;
+}
+
+.laptop-image {
+  padding: 113px 118px 38px 0;
+  position: relative;
+}
+
+.laptop-image img {
+  position: relative;
+  z-index: 2;
+  height: 211px;
+}
+
+.laptop span {
+  content: "";
+  width: 130px;
+  height: 130px;
+  background-color: $main-red;
+  display: block;
+  border-radius: 40px;
+  position: absolute;
+  right: 106px;
+  top: 62px;
+  border: 0;
+  transform: rotate(45deg);
+}
+
+.phone {
+  height: 370px;
+  width: 70vw;
+  margin: 0 auto 37px;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone_info {
+  margin: 60px 35px;
+  height: 188px;
+  width: 416px;
+}
+
+.phone_info h1 {
+  width: 246px;
+  height: 84px;
+  font-family: $secondary-font;
+  font-size: 36px;
+  color: $secondary-color;
+}
+
+.phone_info p {
+  font-family: $primary-font;
+  font-size: 16px;
+  color: $secondary-color;
+  padding: 36px 0 50px 0;
+  line-height: 22px;
+}
+
+.phone_info p::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 332px;
+  background-color: $main-blue;
+  margin-top: 50px;
+}
+
+.phone-image {
+  padding: 113px 118px 38px 0;
+  position: relative;
+}
+
+.phone-image img {
+  height: 356px;
+  position: relative;
+  z-index: 2;
+  top: -85px;
+  left: 50px;
+}
+
+.phone span {
+  content: "";
+  width: 350px;
+  height: 350px;
+  background-color: $main-blue;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  right: 149px;
+  top: 10px;
+  border: 0;
+  transform: rotate(45deg);
+}
+
+.lorem {
+  height: 370px;
+  width: 50vw;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lorem-info {
+  margin: 55px 35px;
+  height: 188px;
+  width: 416px;
+}
+
+.lorem-info h1 {
+  width: 348px;
+  height: 84px;
+  font-family: $secondary-font;
+  font-size: 36px;
+  color: $secondary-color;
+}
+
+.lorem-info p {
+  width: 553px;
+  font-family: $primary-font;
+  font-size: 16px;
+  color: $secondary-color;
+  padding: 36px 0 50px 0;
+  line-height: 22px;
+}
+
+.lorem p::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 332px;
+  background-color: $main-green;
+  margin-top: 50px;
+}
+
+.trumpet-main {
+  height: 370px;
+  width: 70vw;
+  margin: 0 auto 37px;
+  display: flex;
+  padding-bottom: 105px;
+  justify-content: space-between;
+}
+
+.trumpet {
+  height: 370px;
+  width: 440px;
+  margin: 0 0 0 61px;
+  background-color: $main-green;
+}
+
+.trumpet img {
+  padding: 98px 82px 64px 62px;
+  height: 219px;
+}

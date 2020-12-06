@@ -1,0 +1,30 @@
+footer {
+  margin-bottom: 0;
+  width: 100vw;
+  height: 90px;
+  color: #F7F7F7;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 -5px 40px #00000029;
+}
+
+.logo__foot h1 {
+  font-size: 26px;
+  font-family: $secondary-font;
+  color: $main-blue;
+  padding: 21px 0 6px 137px;
+}
+
+.logo__foot h6 {
+  font-size: 11px;
+  font-family: $primary-font;
+  padding-left: 137px;
+  color: $text-grey;
+}
+
+.icon__social {
+  margin: 35px 136px 30px;
+  width: 68px;
+  display: flex;
+  justify-content: space-between;
+}
