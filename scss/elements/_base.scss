@@ -1,6 +1,4 @@
-main {
-  height: 712px;
-  margin-top: 175px;
+.main {
   width: 100%;
   color: $secondary-color;
   text-align: center;
@@ -9,30 +7,48 @@ main {
   justify-content: center;
 }
 
-main h1 {
+.main__logo {
   font-size: 49px;
   font-family: $secondary-font;
-  padding-bottom: 30px;
+  padding: 130px 0 20px;
 }
 
-main h2 {
+.main__text {
   font-size: 16px;
   font-family: $primary-font;
   margin-top: 14px;
   margin-bottom: 19px;
 }
 
-main span {
+.main__btn {
   font-family: $primary-font;
   font-weight: bold;
-  border: 2px solid $main-blue;
   border-radius: 40px;
   color: $primary-color;
   padding: 25px;
-  width: 440px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 38px;
-  height: 67px;
+  margin: 38px auto 0;
   background-color: $main-blue;
+  border: 0;
+  width: 440px;
+}
+
+@media (min-width: 320px) AND (max-width: 640px) {
+  .main__logo {
+    font-size: 2.5rem;
+    margin: 110px 0 0;
+    padding: 40px 0 0;
+  }
+  .main__text {
+    width: 80vw;
+    margin: auto;
+  }
+  .main__btn {
+    width: 70vw;
+    margin: 70px auto 10px;
+  }
+  .main__img {
+    width: 100%;
+    height: 150px;
+    padding-top: 55px;
+  }
 }

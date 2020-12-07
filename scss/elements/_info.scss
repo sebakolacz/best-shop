@@ -1,22 +1,33 @@
-.page-info {
+.info {
   font-family: $secondary-font;
   height: 531px;
   width: 100%;
   background-color: $primary-color;
 }
 
-.page-info h1 {
+.info__logo {
   text-align: center;
-  padding: 100px 0 0 0;
+  padding: 100px 0;
   font-size: 36px;
   color: $secondary-color;
 }
 
-.page-info .person, .eye, .catalog {
-  text-align: center;
+.info__logo-box {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.page-info .eye img {
+.person-circle-img {
+  width: 44px;
+  height: 52px;
+  position: absolute;
+  padding: 7px 0;
+}
+
+.eye-circle-img {
   width: 66px;
   height: 37px;
   position: absolute;
@@ -24,14 +35,7 @@
   left: 20px;
 }
 
-.page-info .person img {
-  width: 44px;
-  height: 52px;
-  position: absolute;
-  padding: 7px 0;
-}
-
-.page-info .catalog img {
+.catalog-circle-img {
   width: 52px;
   height: 48px;
   position: absolute;
@@ -39,16 +43,7 @@
 
 }
 
-.box {
-  width: 80%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-  margin: 0 auto;
-}
-
-.person {
+.info__logo-box-person {
   height: 140px;
   width: 116px;
   display: flex;
@@ -58,14 +53,14 @@
   text-align: center;
 }
 
-.person .circle {
+.person-circle {
   height: 63px;
   width: 63px;
   background-color: $main-red;
   border-radius: 50px;
 }
 
-.eye {
+.info__logo-box-eye {
   height: 167px;
   width: 176px;
   padding-left: 185px;
@@ -77,7 +72,7 @@
   text-align: center;
 }
 
-.eye .circle {
+.eye-circle {
   background-color: $main-blue;
   border-radius: 40px;
   height: 63px;
@@ -85,7 +80,7 @@
   position: relative;
 }
 
-.catalog {
+.info__logo-box-catalog {
   height: 168px;
   width: 163px;
   display: flex;
@@ -95,7 +90,7 @@
   text-align: center;
 }
 
-.catalog .circle {
+.catalog-circle {
   background-color: $main-green;
   border-radius: 40px;
   height: 63px;
@@ -120,4 +115,106 @@
 .statistics_number {
   width: 116px;
   text-align: center;
+}
+
+@media (min-width: 320px) AND (max-width: 640px) {
+  .info {
+    font-family: $secondary-font;
+    width: 100%;
+    background-color: $primary-color;
+    height: 800px;
+  }
+  
+  .info__logo {
+    width: 70vw;
+    margin: auto;
+    font-size: 36px;
+    color: $secondary-color;
+    padding: 50px 0;
+  }
+  
+  .info__logo-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .person-circle-img {
+    width: 44px;
+    height: 52px;
+    position: absolute;
+    padding: 7px 0;
+  }
+  
+  .eye-circle-img {
+    width: 66px;
+    height: 37px;
+    position: absolute;
+    padding: 13px 0;
+    left: 20px;
+  }
+  
+  .catalog-circle-img {
+    width: 52px;
+    height: 48px;
+    position: absolute;
+    padding: 7px 0;
+  
+  }
+  
+  .info__logo-box-person {
+    margin: 40px auto;
+  }
+  
+  .person-circle {
+    height: 63px;
+    width: 63px;
+    background-color: $main-red;
+    border-radius: 50px;
+  }
+  
+  .info__logo-box-eye {
+    padding: 0 0 40px;
+    margin: auto;
+  }
+  
+  .eye-circle {
+    background-color: $main-blue;
+    border-radius: 40px;
+    height: 63px;
+    width: 63px;
+    position: relative;
+  }
+  
+  .info__logo-box-catalog {
+    margin: 0 auto;
+  }
+  
+  .catalog-circle {
+    background-color: $main-green;
+    border-radius: 40px;
+    height: 63px;
+    width: 63px;
+    position: relative;
+  }
+  
+  .statistics_number {
+    padding: 14px 0 19px 0;
+    font-family: $secondary-font;
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  
+  .statistics_info {
+    font-family: $secondary-font;
+    color: $text-grey;
+  }
+  
+  .statistics_info,
+  .statistics_number {
+    width: 116px;
+    text-align: center;
+  }
 }

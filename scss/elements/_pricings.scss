@@ -34,7 +34,7 @@
   margin-top: 77px;
 }
 
-.pricing h1 {
+.pricing__logo {
   font-size: 36px;
   font-family: $secondary-font;
   color: $secondary-color;
@@ -43,7 +43,7 @@
   text-align: center;
 }
 
-.pricing h2 {
+.pricing__logo2 {
   font-size: 21px;
   padding-top: 34px;
   font-weight: bold;
@@ -51,7 +51,9 @@
   text-align: center;
 }
 
-.pricing h3 {
+.pricing__price-basic,
+.pricing__price-professional,
+.pricing__price-premium {
   font-size: 46px;
   padding-top: 14px;
   font-weight: 300;
@@ -60,20 +62,19 @@
   height: 70px;
 }
 
-.basic h3 {
+.pricing__price-basic {
   color: $main-red;
 }
 
-.professional h3 {
+.pricing__price-professional {
   color: $secondary-blue;
 }
 
-.premium h3 {
+.pricing__price-premium {
   color: $main-green;
 }
 
-.professional h4,
-.premium h4 {
+.pricing__price-limited{
   color: $secondary-color;
   font-size: 12px;
   font-weight: bold;
@@ -87,33 +88,39 @@
   font-family: $primary-font;
   font-size: 14px;
   color: $secondary-color;
-  text-align: center;
+  // text-align: center;
   padding-bottom: 20px;
 }
 
-.basic h3,
-.professional h4,
-.premium h4 {
-  padding-bottom: 79px;
+.pricing__price-basic,
+.pricing__price-professional,
+.pricing__price-premium {
+  padding-bottom: 30px;
 }
 
 
 .checked__true::before {
-  content: "";
+  content: " ";
   width: 11px;
   height: 11px;
   display: inline-block;
   margin-right: 10px;
   border-color: $main-green;
-  background-image: url("images/Checkmark-1.svg");
-  opacity: 1;
+  background-image: url("../../images/Checkmark-1.svg");
 }
 
 .checked__false::before {
-  background-image: url("images/Close.svg");
+  content: " ";
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url("../../images/Close.svg");
 }
 
-.btn {
+.pricing__btn-basic, 
+.pricing__btn-professional, 
+.pricing__btn-premium {
   position: relative;
   font-size: 13px;
   border-radius: 23px;
@@ -122,24 +129,154 @@
   color: white;
   font-family: $primary-font;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  font-weight: 600;
 }
 
-.basic .btn {
+.pricing__btn-basic {
   background-color: $main-red;
-  border: 1px solid $main-red;
-  bottom: -46px;
+  border: 0;
+  bottom: -95px;
 }
 
-.professional .btn {
+.pricing__btn-professional {
   background-color: $main-blue;
-  border: 1px solid $main-blue;
-  bottom: -68px;
+  border: 0;
+  bottom: -70px;
 }
 
-.premium .btn {
+.pricing__btn-premium {
   background-color: $main-green;
-  border: 1px solid $main-green;
+  border: 0;
   bottom: -31px;
+}
+
+@media (min-width: 320px) AND (max-width: 640px) {
+  .pricing {
+    height: 1100px;
+  }
+  .pricing__box {
+    flex-direction: column;
+    height: 1100px;
+    width: 80vw;
+  }
+  .pricing__logo {
+    padding-top: 20px;
+  }
+  .pricing__logo2 {
+    padding-top: 0;
+  }
+  .basic {
+    width: 75vw;
+    height: 251px;
+    border: 2px solid $main-red;
+    border-radius: 18px;
+    margin: 0 auto 30px;
+  }
+  
+  .professional {
+    width: 80vw;
+    height: 277px;
+    border: 2px solid $secondary-blue;
+    border-radius: 18px;
+    margin: 0 auto 30px;
+  }
+  
+  .premium {
+    width: 75vw;
+    height: 251px;
+    border: 2px solid $main-green;
+    border-radius: 18px;
+    margin: 0 auto;
+  }
+  .pricing__price-basic,
+  .pricing__price-professional,
+  .pricing__price-premium {
+    padding-bottom: 0;
+  }
+  .pricing__btn-basic-mobile {
+    bottom: 55px;
+    position: relative;
+    font-size: 13px;
+    border-radius: 23px;
+    width: 165px;
+    height: 50px;
+    color: white;
+    font-family: $primary-font;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 600;
+    background-color: $main-red;
+    border: 0;
+  }
+  .pricing__btn-professional-mobile {
+    bottom: 55px;
+    position: relative;
+    font-size: 13px;
+    border-radius: 23px;
+    width: 165px;
+    height: 50px;
+    color: white;
+    font-family: $primary-font;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 600;
+    background-color: $main-blue;
+    border: 0;
+    bottom: 55px;
+  }
+  .pricing__btn-premium-mobile {
+    bottom: 55px;
+    position: relative;
+    font-size: 13px;
+    border-radius: 23px;
+    width: 165px;
+    height: 50px;
+    color: white;
+    font-family: $primary-font;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 600;
+    background-color: $main-green;
+    border: 0;
+    bottom: 25px;
+  }
+  .checked__true,
+  .checked__false {
+    padding-bottom: 20px;
+  }
+  .basic,
+  .professional,
+  .premium {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .pricing__btn-basic,
+  .pricing__btn-professional,
+  .pricing__btn-premium {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) {
+  .pricing__btn-basic-mobile,
+  .pricing__btn-professional-mobile,
+  .pricing__btn-premium-mobile {
+    display: none;
+  }
+  .pricing__btn-basic,
+  .pricing__btn-professional,
+  .pricing__btn-premium {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .pricing__box-display1,
+  .pricing__box-display2 {
+    text-align: center;
+  }
+  .pricing__price-limited {
+    padding-bottom: 50px;
+  }
 }

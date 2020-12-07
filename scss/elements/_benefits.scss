@@ -4,7 +4,7 @@
   background-color: #f7f7f7;
 }
 
-.laptop {
+.benefits__laptop {
   height: 370px;
   width: 70vw;
   margin: 0 auto 37px;
@@ -13,19 +13,19 @@
   justify-content: space-between;
 }
 
-.laptop_info {
+.benefits__laptop_info {
   margin: 91px 35px;
   height: 188px;
   width: 416px;
 }
 
-.laptop_info h1 {
+.benefits__laptop_info-logo {
   font-family: $secondary-font;
   font-size: 36px;
   color: $secondary-color;
 }
 
-.laptop_info p {
+.benefits__laptop_info-text {
   font-family: $primary-font;
   font-size: 16px;
   color: $secondary-color;
@@ -33,7 +33,7 @@
   line-height: 22px;
 }
 
-.laptop_info p::after {
+.benefits__laptop_info-text::after {
   content: "";
   display: block;
   height: 4px;
@@ -42,18 +42,18 @@
   margin-top: 50px;
 }
 
-.laptop-image {
+.benefits__laptop-image {
   padding: 113px 118px 38px 0;
   position: relative;
 }
 
-.laptop-image img {
+.benefits__laptop-image-img {
   position: relative;
   z-index: 2;
   height: 211px;
 }
 
-.laptop span {
+.benefits__laptop-image-bgc {
   content: "";
   width: 130px;
   height: 130px;
@@ -67,7 +67,10 @@
   transform: rotate(45deg);
 }
 
-.phone {
+////////////////////////////////////////////////////
+
+
+.benefits__phone {
   height: 370px;
   width: 70vw;
   margin: 0 auto 37px;
@@ -76,13 +79,13 @@
   justify-content: space-between;
 }
 
-.phone_info {
+.benefits__phone-info {
   margin: 60px 35px;
   height: 188px;
   width: 416px;
 }
 
-.phone_info h1 {
+.benefits__phone-info-logo {
   width: 246px;
   height: 84px;
   font-family: $secondary-font;
@@ -90,7 +93,7 @@
   color: $secondary-color;
 }
 
-.phone_info p {
+.benefits__phone-info-text {
   font-family: $primary-font;
   font-size: 16px;
   color: $secondary-color;
@@ -98,7 +101,7 @@
   line-height: 22px;
 }
 
-.phone_info p::after {
+.benefits__phone-info-text::after {
   content: "";
   display: block;
   height: 4px;
@@ -107,12 +110,12 @@
   margin-top: 50px;
 }
 
-.phone-image {
+.benefits__phone-image {
   padding: 113px 118px 38px 0;
   position: relative;
 }
 
-.phone-image img {
+.benefits__phone-image-img {
   height: 356px;
   position: relative;
   z-index: 2;
@@ -120,7 +123,7 @@
   left: 50px;
 }
 
-.phone span {
+.benefits__phone-image-bgc {
   content: "";
   width: 350px;
   height: 350px;
@@ -134,7 +137,11 @@
   transform: rotate(45deg);
 }
 
-.lorem {
+
+//////////////////////////////////////////////
+
+
+.benefits__trumpet-box {
   height: 370px;
   width: 50vw;
   background-color: $primary-color;
@@ -142,13 +149,13 @@
   justify-content: space-between;
 }
 
-.lorem-info {
+.benefits__trumpet-lorem-info {
   margin: 55px 35px;
   height: 188px;
   width: 416px;
 }
 
-.lorem-info h1 {
+.benefits__trumpet-lorem-logo {
   width: 348px;
   height: 84px;
   font-family: $secondary-font;
@@ -156,7 +163,7 @@
   color: $secondary-color;
 }
 
-.lorem-info p {
+.benefits__trumpet-lorem-text {
   width: 553px;
   font-family: $primary-font;
   font-size: 16px;
@@ -165,7 +172,7 @@
   line-height: 22px;
 }
 
-.lorem p::after {
+.benefits__trumpet-lorem-text::after {
   content: "";
   display: block;
   height: 4px;
@@ -174,7 +181,7 @@
   margin-top: 50px;
 }
 
-.trumpet-main {
+.benefits__trumpet {
   height: 370px;
   width: 70vw;
   margin: 0 auto 37px;
@@ -183,14 +190,119 @@
   justify-content: space-between;
 }
 
-.trumpet {
+.benefits__trumpet-image {
   height: 370px;
   width: 440px;
   margin: 0 0 0 61px;
   background-color: $main-green;
 }
 
-.trumpet img {
+.benefits__trumpet-image-img {
   padding: 98px 82px 64px 62px;
   height: 219px;
+}
+
+@media (min-width: 320px) AND (max-width: 640px) {
+  .benefits {
+    padding-top: 50px;
+  }
+  .benefits__laptop {
+    flex-direction: column-reverse;
+    height: 500px;
+    width: 80vw;
+  }
+  .benefits__laptop_info {
+    width: 60vw;
+  }
+  .benefits__laptop_info-logo {
+    font-size: 1.8rem;
+  }
+  .benefits__laptop_info-text {
+    width: 60vw;
+    padding-bottom: 0;
+  }
+  .benefits__laptop-image {
+    top: 80px;
+    left: 30px;
+  }
+  .benefits__laptop-image-img {
+    height: 100px;
+  }
+  .benefits__laptop-image-bgc {
+    height: 100px;
+    width: 100px;
+  }
+  .benefits__laptop_info-text::after,
+  .benefits__phone-info-text::after,
+  .benefits__trumpet-lorem-text::after {
+    display: none;
+  }
+
+
+  .benefits {
+    padding-top: 50px;
+  }
+  .benefits__phone {
+    flex-direction: column;
+    height: 500px;
+    width: 80vw;
+  }
+  .benefits__phone-info-logo {
+    font-size: 1.8rem;
+    padding-left: 37px;
+    margin-top: 20px;
+  }
+  .benefits__phone-info-text {
+    width: 60vw;
+    padding: 0 auto;
+    padding-left: 37px;
+    padding-top: 0;
+  }
+  .benefits__phone-image {
+    padding: 0;
+  }
+  .benefits__phone-image-img {
+    height: 150px;
+    top: 40px;
+    left: 60px;
+  }
+  .benefits__phone-image-bgc {
+    height: 160px;
+    width: 160px;
+    top: 20px;
+    left: 60px;
+  }
+
+
+
+  .benefits__trumpet-box {
+    width: 80vw;
+    margin: 0 auto;
+    height: 350px;
+  }
+  .benefits__trumpet {
+    width: 80vw;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .benefits__trumpet-lorem-logo {
+    font-size: 1.8rem;
+    width: 60vw;
+  }
+  .benefits__trumpet-lorem-text {
+    width: 60vw;
+  }
+  .benefits__trumpet-image {
+    height: 220px;
+    width: 80vw;
+    margin: 0;
+    background-color: $main-green;
+  }
+  .benefits__trumpet-image-img {
+    height: 119px;
+    padding: 17vw;
+  }
 }
