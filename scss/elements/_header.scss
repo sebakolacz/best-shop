@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   box-shadow: 0 3px 6px 0 #00000029;
-  width: 100vw;
+  width: 100%;
 }
 
 .header__logo {
@@ -62,6 +62,8 @@
 @media (min-width: 320px) AND (max-width: 640px) {
   .header {
     justify-content: space-between;
+    overflow: hidden;
+    position: relative;
   }
   .header__menu {
     display: none;
@@ -83,7 +85,6 @@
   }
   
   .hamburger--active {
-    /* transform: translatex(-250px); */
     background-color: transparent;
   }
   
@@ -126,9 +127,9 @@
     top: 10px;
   }
   
-  .hamburger--active .hamburger__inner {
-    background-color: transparent;
-  }
+  // .hamburger--active .hamburger__inner {
+  //   background-color: transparent;
+  // }
   
   .hamburger--active .hamburger__inner:before {
     transform: translateY(10px) rotate(45deg);
@@ -144,7 +145,6 @@
     top: 80px;
     left: 50px;
     transform: translateX(100vw);
-    overflow: visible;
   }
   
   .navigation--active {
