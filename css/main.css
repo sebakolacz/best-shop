@@ -545,6 +545,10 @@ textarea {
     top: 10px;
   }
 
+  .hamburger--active .hamburger__inner {
+    background-color: transparent;
+  }
+
   .hamburger--active .hamburger__inner:before {
     transform: translateY(10px) rotate(45deg);
   }
@@ -555,15 +559,13 @@ textarea {
 
   .navigation {
     background-color: transparent;
-    position: absolute;
-    top: 80px;
-    left: 50px;
+    position: fixed;
+    top: 75px;
     transform: translateX(100vw);
   }
 
   .navigation--active {
-    transform: translateX(50vw);
-    top: 80px;
+    transform: translateX(70vw);
     background-color: transparent;
   }
 
@@ -580,6 +582,7 @@ textarea {
   .navigation__item a {
     text-decoration: none;
     color: lightgrey;
+    display: block;
   }
 
   .hamburger__menu-list-item-a {
